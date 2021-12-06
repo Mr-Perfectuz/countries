@@ -8,6 +8,8 @@
      --main-font: "Nunito Sans","Roboto" sans-serif;
 
 }
+
+/* dark-mode  */
 .dark-mode{
      --black: #FFFFFF;
      --text-color: #1e262e;
@@ -79,7 +81,8 @@ img{
 
 /* Main content  */
 .main-content{
-     flex-grow: 1;
+     margin-right: auto;
+     margin-left: auto;
 }
 
 
@@ -90,6 +93,7 @@ img{
      background-color:  var(--body-bg);
 }
 .header-inner{
+     width: 100%;
      display: flex;
      padding-top: 23px;
      padding-bottom: 24px;
