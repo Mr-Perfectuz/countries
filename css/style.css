@@ -39,8 +39,8 @@
 :root{
      --body-bg: #fff;
      --black: #111517;
-     --dark-light: #979797;
-     --dark-bg: #2B3844;
+     --dark-light: #2B3844;
+     --dark-bg: #202C36;
      --text-color: #FFFFFF;
      --main-font: "Nunito Sans","Roboto" sans-serif;
      --background-color: #F2F2F2;
@@ -51,7 +51,8 @@
 .dark-mode{
      --black: #FFFFFF;
      --text-color: #1e262e;
-     --body-bg: var(--dark-bg);
+     --body-bg: var(--dark-light);
+     --background-color: var(--dark-bg);
 }
 
 /* outline  */
@@ -128,6 +129,7 @@ img{
 .globall-search-form{
      position: relative;
      margin-right: auto;
+     color: var(--black);
 }
 .globall-search-form-input{
      width: 480px;
@@ -141,6 +143,7 @@ img{
      background-color: var(--body-bg);
      padding-left: 74px;
      background-image: url(/images/search-icon.png);
+     color: var(--black);
      background-repeat: no-repeat;
      background-position: 32px 13px;
      background-size: center;
@@ -257,6 +260,7 @@ img{
      border: none;
      padding-right: 37px;
      background-color: var(--body-bg);
+     color: var(--black);
 }
 
 
@@ -347,6 +351,17 @@ img{
 }
 .flags-box:not(:last-child){
      margin-right: 75px;
+}
+.flag-box-link{
+     color: var(--black);
+     text-decoration: none;
+
+}
+.flag-box-link:hover{
+     opacity: 0.8;
+}
+.flag-box-link:active{
+     opacity: 0.6;
 }
 
 .flags-box {
