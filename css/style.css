@@ -1,3 +1,40 @@
+@font-face {
+     font-family: "Nunito Sans";
+     src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+          url("../fonts/NunitoSans-Regular.woff") format("woff");
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: "Nunito Sans";
+     src: url("../fonts/NunitoSans-Light.woff2") format("woff2"),
+          url("../fonts/NunitoSans-Light.woff") format("woff");
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: "Nunito Sans";
+     src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+          url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: "Nunito Sans";
+     src: url("../fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+          url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+     font-weight: 600;
+     font-style: normal;
+     font-display: swap;
+}
+
+
 /* Custom Props  */
 :root{
      --body-bg: #fff;
@@ -6,6 +43,7 @@
      --dark-bg: #2B3844;
      --text-color: #FFFFFF;
      --main-font: "Nunito Sans","Roboto" sans-serif;
+     --background-color: #F2F2F2;
 
 }
 
@@ -16,9 +54,9 @@
      --body-bg: var(--dark-bg);
 }
 
-/* Focus  */
+/* outline  */
 :focus{
-     outline: 2px dotted var(--dark-light);
+     outline: 2px dashed var(--dark-light);
 }
 
 /* Global  */
@@ -58,10 +96,10 @@ body{
      font-family: var(--main-font);
      flex-direction: column;
      height: 100%;
-     background-color: var(--text-color);
+     background-color: var(--background-color);
      color: var(--black);
      transition: background-color 0.3s ease,
-          color 0.3s ease;
+     color 0.3s ease;
 }
 
 img{
@@ -83,9 +121,31 @@ img{
 .main-content{
      margin-right: auto;
      margin-left: auto;
+     margin-top: 48px;
 }
 
+/* Global search form  */
+.globall-search-form{
+     position: relative;
+     margin-right: auto;
+}
+.globall-search-form-input{
+     width: 480px;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 20px;
+     border: none;
+     padding-top: 13px;
+     padding-bottom: 13px;
+     background-color: var(--body-bg);
+     padding-left: 74px;
+     background-image: url(/images/search-icon.png);
+     background-repeat: no-repeat;
+     background-position: 32px 13px;
+     background-size: center;
 
+}
 /* HEADER  */
 .main-header{
      width: 100%;
@@ -101,7 +161,7 @@ img{
 
 .logo{
      margin-right: auto;
-     font-family: var(--main-font);
+     font-family: "Nunito Sans","Roboto" sans-serif;
      font-style: normal;
      font-weight: 800;
      font-size: 24px;
@@ -145,7 +205,6 @@ img{
 
 /* Back button   */
 .back-button{
-     margin-top: 80px;
      padding: 10px;
 }
 
@@ -170,6 +229,36 @@ img{
      line-height: 20px;
      color: var(--black);
 }
+
+/* FORM element  */
+.form-and-select-wrapper {
+     display: flex;
+     align-items: center;
+}
+
+/* Select element  */
+.select-form {
+     background-color: var(--body-bg);
+     color: var(--black);
+     width: 200px;
+     padding: 18px;
+     padding-left: 24px;
+     border-radius: 5px;
+}
+.filter-by-region-label{
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 20px;
+
+
+}
+.filter-by-region-select{
+     border: none;
+     padding-right: 37px;
+     background-color: var(--body-bg);
+}
+
 
 /* Main section */
 .main-section{
@@ -246,6 +335,66 @@ img{
      padding: 5px;
 
 }
-.border-countries-france{
 
+/* FLAG_SECTION  */
+.flags-section {
+     margin-top: 48px;
+
+}
+.flag-box-upper{
+     display: flex;
+
+}
+.flags-box:not(:last-child){
+     margin-right: 75px;
+}
+
+.flags-box {
+     padding: 0;
+     margin: 0;
+     width: 264px;
+     background-color: var(--body-bg);
+
+}
+.country-img {
+     padding: 0;
+     margin: 0;
+     width: 264px;
+     height: 160px;
+     object-fit: cover;
+}
+.img-header {
+     padding: 0;
+     margin: 0;
+     font-family: var(--main-font);
+     margin-left: 24px;
+     font-style: normal;
+     font-weight: 800;
+     font-size: 18px;
+     line-height: 26px;
+}
+.info-list-right {
+     padding: 0;
+     margin-left: 24px;
+}
+.img-info-list {
+     padding: 0;
+     margin: 0;
+     font-family: var(--main-font);
+     list-style: none;
+     font-style: normal;
+     color:var(--black);
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 16px;
+}
+.img-info-list:last-child{
+     padding-bottom: 46px;
+}
+.flag-box-down{
+     display: flex;
+     padding: 0;
+     margin: 0;
+     margin-top: 75px;
+     margin-bottom: 45px;
 }
