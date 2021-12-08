@@ -72,7 +72,7 @@ html{
 .button{
      padding: 0;
      white-space: nowrap;
-     background-color:  var(--body-bg);
+     color: var(--black);
      border: none;
      cursor: pointer;
 }
@@ -171,6 +171,7 @@ img{
      line-height: 33px;
      color: var(--black);
      text-decoration: none;
+     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo:hover{
      opacity: 0.8;
@@ -181,20 +182,13 @@ img{
 
 .dark-mode-button{
      padding: 6px;
+     background-color:  var(--body-bg);
+     color: var(--text-color);
 }
 .dark-mode-button-wrapper{
      display: flex;
      align-items: center;
-}
-.dark-mode-icon{
-     width: 20px;
-     height: 20px;
-     display: inline-block;
-     background-image: url(/images/dark-mode-icon\ 2.png);
-     background-size: contain;
-     background-position: center center;
-     margin-right: 8px;
-
+     color: var(--black);
 }
 
 .dark-mode-text{
@@ -204,25 +198,24 @@ img{
      font-size: 16px;
      line-height: 22px;
      color: var(--black);
+     margin-left: 8px;
 }
 
 /* Back button   */
 .back-button{
      padding: 10px;
+     text-decoration: none;
+     display: inline-block;
 }
 
 .back-button-wrapper{
      display: flex;
      align-items: center;
+     color: var(--black);
 }
 .back-mode-icon{
      width: 20px;
      height: 20px;
-     display: inline-block;
-     background-image: url(/images/back-icon.png);
-     color:  var(--body-bg);
-     background-size: contain;
-     background-position: center center;
      margin-right: 10px;
 }
 .back-mode-text{
@@ -231,6 +224,7 @@ img{
      font-size: 16px;
      line-height: 20px;
      color: var(--black);
+     margin-left: 10px;
 }
 
 /* FORM element  */
@@ -351,10 +345,12 @@ img{
 }
 .flags-box:not(:last-child){
      margin-right: 75px;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .flag-box-link{
      color: var(--black);
      text-decoration: none;
+     display: inline-block;
 
 }
 .flag-box-link:hover{
